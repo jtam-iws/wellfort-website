@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/notification",
+      "handler": "notification.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/notification",
+      "handler": "notification.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/notification",
+      "handler": "notification.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

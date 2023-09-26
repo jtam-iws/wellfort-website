@@ -1,0 +1,65 @@
+{
+  "collectionName": "components_shared_image_texts",
+  "info": {
+    "name": "imageText",
+    "icon": "object-group",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "overlap",
+        "faded",
+        "uneven",
+        "inset"
+      ],
+      "default": "default",
+      "required": true
+    },
+    "colour": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "light",
+        "dark"
+      ],
+      "default": "primary",
+      "required": true
+    },
+    "imageSide": {
+      "type": "enumeration",
+      "enum": [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "required": true,
+      "default": "right"
+    },
+    "text": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    }
+  }
+}

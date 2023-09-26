@@ -1,0 +1,62 @@
+{
+  "collectionName": "components_shared_quotes",
+  "info": {
+    "name": "quote",
+    "icon": "quote-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "filled",
+        "outlined"
+      ],
+      "default": "default",
+      "required": true
+    },
+    "direction": {
+      "type": "enumeration",
+      "enum": [
+        "horizontal",
+        "vertical"
+      ],
+      "default": "vertical",
+      "required": true
+    },
+    "colour": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "light",
+        "dark"
+      ],
+      "required": true,
+      "default": "primary"
+    },
+    "author": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

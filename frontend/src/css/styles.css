@@ -1,0 +1,6 @@
+.container-break {
+  margin-left: 50%;
+  margin-right: 0;
+  transform: translateX(-50%);
+  width: 100vw;
+}

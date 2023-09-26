@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_spacers",
+  "info": {
+    "name": "spacer",
+    "icon": "arrows-alt-v"
+  },
+  "options": {},
+  "attributes": {
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "required": true,
+      "default": "md"
+    }
+  }
+}

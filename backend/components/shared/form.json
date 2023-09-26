@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_forms",
+  "info": {
+    "name": "Form",
+    "icon": "envelope-open-text",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "form": {
+      "type": "enumeration",
+      "enum": [
+        "feedback"
+      ],
+      "required": true
+    },
+    "confirmation": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+runtime: nodejs12
+
+instance_class: F4
+
+env_variables:
+  HOST: '0.0.0.0'
+  NODE_ENV: 'production'
+  DATABASE_NAME: 'strapi'
+  DATABASE_USERNAME: 'root'
+  DATABASE_PASSWORD: 'HcCeMde7vqKD8qFl'
+  INSTANCE_CONNECTION_NAME: 'wellfort:northamerica-northeast2:strapi'
+
+beta_settings:
+  cloud_sql_instances: 'wellfort:northamerica-northeast2:strapi'

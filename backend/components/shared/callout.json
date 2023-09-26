@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_shared_callouts",
+  "info": {
+    "name": "callout",
+    "icon": "bullhorn",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "basic",
+        "filled",
+        "outlined"
+      ],
+      "required": true,
+      "default": "default"
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "colour": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "light",
+        "dark"
+      ],
+      "required": true,
+      "default": "primary"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

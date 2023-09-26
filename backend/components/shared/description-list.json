@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_shared_description_lists",
+  "info": {
+    "name": "descriptionList",
+    "icon": "list"
+  },
+  "options": {},
+  "attributes": {
+    "colour": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "light",
+        "dark"
+      ],
+      "default": "primary",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.description-list-item",
+      "required": true,
+      "min": 1
+    }
+  }
+}

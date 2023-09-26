@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_shared_galleries",
+  "info": {
+    "name": "gallery",
+    "icon": "grip-horizontal",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "columns": {
+      "type": "integer",
+      "default": 3,
+      "required": true,
+      "max": 6,
+      "min": 1
+    },
+    "gap": {
+      "type": "enumeration",
+      "enum": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "default": "md"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.gallery-image"
+    }
+  }
+}

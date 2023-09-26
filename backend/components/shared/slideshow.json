@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_slideshows",
+  "info": {
+    "name": "slideshow",
+    "icon": "images"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.gallery-image"
+    }
+  }
+}

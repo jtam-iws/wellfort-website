@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "notifications",
+  "info": {
+    "name": "notification",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "expires": {
+      "type": "datetime"
+    },
+    "frequency": {
+      "type": "integer",
+      "default": 1
+    },
+    "message": {
+      "type": "text",
+      "required": false
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    }
+  }
+}

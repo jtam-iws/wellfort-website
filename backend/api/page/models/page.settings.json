@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "full_slug": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0,
+      "required": true,
+      "max": 99,
+      "min": -99
+    },
+    "parent_page": {
+      "model": "page"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.seo"
+    },
+    "navigation": {
+      "model": "navigationitem",
+      "plugin": "navigation",
+      "via": "related",
+      "configurable": false,
+      "hidden": true
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.accordion",
+        "shared.buttons",
+        "shared.callout",
+        "shared.cover",
+        "shared.description-list",
+        "shared.form",
+        "shared.gallery",
+        "shared.image",
+        "shared.image-text",
+        "shared.quote",
+        "shared.slideshow",
+        "shared.spacer",
+        "shared.text",
+        "shared.videos"
+      ]
+    }
+  }
+}

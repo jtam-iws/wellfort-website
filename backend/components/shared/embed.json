@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_embeds",
+  "info": {
+    "name": "embed",
+    "icon": "tv"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "oembed": {
+      "type": "oembed",
+      "columnType": "longtext",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_meta_seos",
+  "info": {
+    "name": "seo",
+    "icon": "spider",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_home_home_slides",
+  "info": {
+    "name": "homePanel",
+    "icon": "info-circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link",
+      "required": false
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

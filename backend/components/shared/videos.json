@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_videos",
+  "info": {
+    "name": "videos",
+    "icon": "play-circle"
+  },
+  "options": {},
+  "attributes": {
+    "columns": {
+      "type": "integer",
+      "default": 3,
+      "required": true,
+      "max": 6,
+      "min": 1
+    },
+    "gap": {
+      "type": "enumeration",
+      "enum": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "default": "md"
+    },
+    "embeds": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.embed"
+    }
+  }
+}

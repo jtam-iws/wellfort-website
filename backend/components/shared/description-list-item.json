@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_description_list_items",
+  "info": {
+    "name": "descriptionListItem",
+    "icon": "list-ul"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

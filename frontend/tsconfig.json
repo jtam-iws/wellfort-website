@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["dom", "es2015", "es2017"],
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "paths": {
+      "~components/*": ["components/*"],
+      "~hooks/*": ["hooks/*"],
+      "~lib/*": ["lib/*"],
+      "~theme": ["./theme/index.tsx"],
+      "~types/*": ["types/*"]
+    }
+  },
+  "include": ["./src/**/*"]
+}

@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_shared_accordions",
+  "info": {
+    "name": "accordion",
+    "icon": "grip-lines"
+  },
+  "options": {},
+  "attributes": {
+    "colour": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "light",
+        "dark"
+      ],
+      "required": true,
+      "default": "primary"
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "filled",
+        "outlined"
+      ],
+      "default": "default",
+      "required": true
+    },
+    "collapseItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.collapse",
+      "required": true
+    }
+  }
+}

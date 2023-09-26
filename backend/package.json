@@ -1,0 +1,48 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "gcp-build": "strapi build"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^29.1.0",
+    "@ckeditor/ckeditor5-react": "^3.0.2",
+    "knex": "0.21.18",
+    "mysql": "^2.18.1",
+    "slugify": "^1.6.0",
+    "sqlite3": "5.0.0",
+    "strapi": "3.6.8",
+    "strapi-admin": "3.6.8",
+    "strapi-connector-bookshelf": "3.6.8",
+    "strapi-plugin-ckeditor5": "^1.13.0",
+    "strapi-plugin-content-manager": "3.6.8",
+    "strapi-plugin-content-type-builder": "3.6.8",
+    "strapi-plugin-email": "3.6.8",
+    "strapi-plugin-graphql": "3.6.8",
+    "strapi-plugin-i18n": "3.6.8",
+    "strapi-plugin-navigation": "1.0.3",
+    "strapi-plugin-oembed": "^0.4.0",
+    "strapi-plugin-upload": "3.6.8",
+    "strapi-plugin-users-permissions": "3.6.8",
+    "strapi-provider-upload-google-cloud-storage": "3.6.8",
+    "strapi-utils": "3.6.8"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "d35ea6e9-a67b-4eaf-9d45-181519b41194"
+  },
+  "engines": {
+    "node": "^12",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT"
+}
